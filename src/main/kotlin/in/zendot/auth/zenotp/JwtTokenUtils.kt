@@ -21,7 +21,7 @@ class JwtTokenUtils(
 ) {
 
     fun generateToken(user: User): String = Jwts.builder()
-        .claim("username", user.userName)
+        .claim("username", user.phoneNo)
         .subject(user.id)
         .id(UUID.randomUUID().toString())
         .issuedAt(Date())

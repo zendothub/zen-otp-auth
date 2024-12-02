@@ -10,6 +10,6 @@ import java.util.*
 
 @Repository
 interface UserRepository : MongoRepository<User, String> {
-    fun findByUserName(userName: String): Optional<User>
+    fun findByPhoneNo(userName: String): Optional<User>
 }
 

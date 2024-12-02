@@ -54,7 +54,7 @@ class UserService(
             throw UsernameNotFoundException("Username is null")
         }
 
-        val userObj: Optional<User> = userRepository.findByUserName(username)
+        val userObj: Optional<User> = userRepository.findByPhoneNo(username)
         val authUser: User = userObj.orElseThrow {
             UsernameNotFoundException("User not found with username: $username")
         }

@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails
 
 
 class User(
+    var id:String?=null,
     var phoneNo: String,
     @JsonIgnore var passwordHash: String?,
     var authoritiess: List<String> = emptyList(),
