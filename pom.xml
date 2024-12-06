@@ -124,8 +124,8 @@
 	</build>
 	<distributionManagement>
 		<repository>
-			<id>github</id>
-			<url>git@github.com:zendothub/zen-otp-auth.git</url>
+			<id>zen_otp</id>
+			<url>https://maven.pkg.github.com/zendothub/zen-otp-auth</url>
 		</repository>
 	</distributionManagement>
 
